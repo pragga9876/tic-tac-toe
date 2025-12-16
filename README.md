@@ -363,7 +363,7 @@ Made with ❤️ by [Pragga Mukherjee](https://github.com/pragga9876)
 
 ## 📖 Additional Resources
 
-- [Complete SCSS Structure Guide](SCSS-STRUCTURE.md) - Detailed explanation of all SCSS files
+- [Complete SCSS Structure Guide](SCSS_STRUCTURE.md) - Detailed explanation of all SCSS files
 - [Setup Guide](setup-guide.md) - File-by-file code and implementation guide
 - [React Documentation](https://react.dev)
 - [Vite Documentation](https://vitejs.dev)
