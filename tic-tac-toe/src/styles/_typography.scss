@@ -1,0 +1,76 @@
+// ========================================
+// TYPOGRAPHY STYLES
+// ========================================
+
+/// Main page title
+.title {
+  text-align: center;
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-extra-bold;
+  @include gradient-text($secondary-gradient);
+  margin-bottom: $space-2xl;
+  letter-spacing: 2px;
+
+  @include respond-to('tablet') {
+    font-size: $font-size-2xl;
+  }
+
+  @include respond-to('mobile') {
+    font-size: $font-size-xl;
+  }
+}
+
+/// Heading styles
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  color: $text-primary;
+  margin-bottom: $space-lg;
+}
+
+h1 {
+  font-size: $font-size-3xl;
+}
+
+h2 {
+  font-size: $font-size-2xl;
+}
+
+h3 {
+  font-size: $font-size-xl;
+}
+
+h4, h5, h6 {
+  font-size: $font-size-lg;
+}
+
+/// Paragraph styles
+p {
+  color: $text-secondary;
+  line-height: 1.6;
+  margin-bottom: $space-lg;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/// Label styles
+label {
+  display: block;
+  font-weight: $font-weight-medium;
+  margin-bottom: $space-sm;
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/// Small text
+.text-small {
+  font-size: $font-size-sm;
+  color: $text-secondary;
+}
+
+/// Gradient text utility
+.gradient-text {
+  @include gradient-text($secondary-gradient);
+}

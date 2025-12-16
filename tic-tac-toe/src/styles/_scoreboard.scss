@@ -1,0 +1,69 @@
+// ========================================
+// SCOREBOARD STYLES
+// ========================================
+
+/// Main scoreboard container
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $space-md;
+  margin-bottom: $space-2xl;
+  padding: $space-xl;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 16, 35, 0.6),
+    rgba(30, 30, 50, 0.6)
+  );
+  border-radius: $radius-lg;
+  border: 1px solid $border-color;
+
+  @include respond-to('mobile') {
+    gap: $space-sm;
+    padding: $space-lg;
+  }
+}
+
+/// Individual score item
+.score-item {
+  @include flex-col;
+  padding: $space-md;
+  border-radius: $radius-md;
+  border: 2px solid $border-color;
+  transition: $transition;
+
+  /// X player score
+  &.x-score {
+    background: rgba(0, 212, 255, 0.05);
+    border-color: $neon-cyan;
+  }
+
+  /// O player score
+  &.o-score {
+    background: rgba(255, 0, 110, 0.05);
+    border-color: $neon-pink;
+  }
+
+  /// Draw score
+  &.draw-score {
+    background: rgba(0, 255, 65, 0.05);
+    border-color: $neon-green;
+  }
+}
+
+/// Score label text
+.score-label {
+  font-size: $font-size-sm;
+  color: $text-secondary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: $space-sm;
+  font-weight: $font-weight-medium;
+}
+
+/// Score number value
+.score-value {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-extra-bold;
+  @include gradient-text($secondary-gradient);
+  animation: pulse 2s infinite;
+}

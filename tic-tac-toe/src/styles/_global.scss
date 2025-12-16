@@ -1,0 +1,74 @@
+// ========================================
+// GLOBAL STYLES
+// ========================================
+
+/// Reset default styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/// HTML base styles
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/// Body styles
+body {
+  background: $primary-gradient;
+  font-family: $font-family;
+  color: $text-primary;
+  min-height: 100vh;
+  @include flex-center;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/// Root container (React root)
+#root {
+  width: 100%;
+  min-height: 100vh;
+  @include flex-center;
+  padding: $space-lg;
+}
+
+/// Link default styles
+a {
+  color: $neon-cyan;
+  text-decoration: none;
+  transition: $transition;
+
+  &:hover {
+    color: lighten($neon-cyan, 10%);
+    text-decoration: underline;
+  }
+}
+
+/// Code block styles
+code {
+  font-family: 'Courier New', monospace;
+  background: $card-bg;
+  padding: 2px 6px;
+  border-radius: $radius-sm;
+  font-size: 0.9rem;
+}
+
+/// Scrollbar styling (optional)
+::-webkit-scrollbar {
+  width: 8px;
+
+  &-track {
+    background: $dark-bg;
+  }
+
+  &-thumb {
+    background: $neon-cyan;
+    border-radius: $radius-md;
+
+    &:hover {
+      background: lighten($neon-cyan, 10%);
+    }
+  }
+}

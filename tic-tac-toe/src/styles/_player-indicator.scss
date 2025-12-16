@@ -1,0 +1,53 @@
+// ========================================
+// PLAYER INDICATOR STYLES
+// ========================================
+
+/// Container for player status
+.status-container {
+  @include flex-center;
+  margin-bottom: $space-2xl;
+  gap: $space-lg;
+}
+
+/// Player turn indicator
+.player-indicator {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 255, 0.1),
+    rgba(255, 0, 110, 0.1)
+  );
+  @include neon-border($neon-cyan);
+  border-radius: $radius-lg;
+  padding: $space-md $space-xl;
+  @include flex-col;
+  gap: $space-sm;
+  transition: $transition;
+
+  /// X player turn
+  &.x {
+    @include neon-border($neon-cyan);
+  }
+
+  /// O player turn
+  &.o {
+    border-color: $neon-pink;
+    box-shadow: 0 0 20px rgba($neon-pink, 0.3);
+  }
+}
+
+/// Player label text
+.player-label {
+  font-size: $font-size-sm;
+  color: $text-secondary;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: $font-weight-medium;
+}
+
+/// Player symbol (X or O)
+.player-symbol {
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-extra-bold;
+  @include gradient-text($secondary-gradient);
+  animation: pulse 2s infinite;
+}

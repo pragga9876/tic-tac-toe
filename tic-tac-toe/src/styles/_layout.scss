@@ -1,0 +1,62 @@
+// ========================================
+// APP LAYOUT
+// ========================================
+
+/// Main app container
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  @include flex-center;
+  padding: $space-lg;
+
+  @include respond-to('mobile') {
+    padding: $space-md;
+  }
+}
+
+/// Main card wrapper
+.main-card {
+  @include card;
+  padding: $space-4xl;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: $shadow-xl;
+  backdrop-filter: blur(10px);
+
+  @include respond-to('tablet') {
+    padding: $space-2xl;
+  }
+
+  @include respond-to('mobile') {
+    padding: $space-lg;
+  }
+}
+
+/// Generic card component
+.card {
+  @include card;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: $shadow-lg;
+  }
+}
+
+/// Card header
+.card-header {
+  padding-bottom: $space-lg;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: $space-lg;
+}
+
+/// Card body
+.card-body {
+  padding: $space-lg;
+}
+
+/// Card footer
+.card-footer {
+  padding-top: $space-lg;
+  border-top: 1px solid $border-color;
+  margin-top: $space-lg;
+}

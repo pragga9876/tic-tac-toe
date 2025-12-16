@@ -1,0 +1,185 @@
+// ========================================
+// FLEXBOX MIXINS
+// ========================================
+
+/// Flex centered (both horizontally & vertically)
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/// Flex column with centered items
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/// Flex column centered
+@mixin flex-col-center {
+  @include flex-col;
+  justify-content: center;
+}
+
+/// Flex between (space-between)
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// ========================================
+// TEXT & GRADIENT MIXINS
+// ========================================
+
+/// Apply gradient to text (text gradient effect)
+@mixin gradient-text($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/// Neon border with glow effect
+@mixin neon-border($color) {
+  border: 2px solid $color;
+  box-shadow: 0 0 20px rgba($color, 0.3);
+  transition: $transition;
+}
+
+/// Truncate text with ellipsis
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// ========================================
+// INTERACTION MIXINS
+// ========================================
+
+/// Button base styles
+@mixin button-base {
+  padding: $space-sm $space-lg;
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+  border: none;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: $transition;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $font-family;
+}
+
+/// Hover scale effect
+@mixin hover-scale($scale: 1.05) {
+  transition: $transition;
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+/// Hover lift effect (translateY)
+@mixin hover-lift($distance: -3px) {
+  transition: $transition;
+  &:hover {
+    transform: translateY($distance);
+  }
+}
+
+/// Active press effect
+@mixin active-press {
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+// ========================================
+// LAYOUT MIXINS
+// ========================================
+
+/// Create a card-like container
+@mixin card {
+  background: $card-bg;
+  border: 2px solid $border-color;
+  border-radius: $radius-lg;
+  padding: $space-xl;
+  box-shadow: $shadow-md;
+}
+
+/// Full height flex container
+@mixin full-height {
+  width: 100%;
+  min-height: 100vh;
+  @include flex-center;
+}
+
+/// Responsive container with max-width
+@mixin container($max-width: 900px) {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-lg;
+}
+
+// ========================================
+// RESPONSIVE DESIGN MIXIN
+// ========================================
+
+/// Media query helper for responsive design
+/// Usage: @include respond-to('tablet') { ... }
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'tablet' {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == 'mobile' {
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
+  } @else if $breakpoint == 'desktop' {
+    @media (min-width: ($breakpoint-tablet + 1px)) {
+      @content;
+    }
+  }
+}
+
+// ========================================
+// UTILITY MIXINS
+// ========================================
+
+/// Remove default button styles
+@mixin button-reset {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/// Hide element visually but keep in DOM (accessibility)
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/// Glassmorphism effect
+@mixin glassmorphism($blur: 10px) {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur($blur);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/// Smooth transitions
+@mixin smooth-transition {
+  transition: all $transition $easing-out;
+}

@@ -1,0 +1,23 @@
+// Main SCSS file - imports all partials in order
+// Do NOT add any styles here, only @import statements
+
+// 1. Configuration (Variables & Mixins must come first)
+@import 'variables';
+@import 'mixins';
+
+// 2. Global Styles
+@import 'animations';
+@import 'global';
+
+// 3. Layout Components
+@import 'layout';
+
+// 4. Typography
+@import 'typography';
+
+// 5. Game Components
+@import 'scoreboard';
+@import 'board';
+@import 'player-indicator';
+@import 'buttons';
+@import 'announcements';
