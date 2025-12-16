@@ -180,7 +180,7 @@ Made with ❤️ by [Pragga Mukherjee](https://github.com/pragga9876)
 
 ## 📖 Additional Resources
 
-- [Complete SASS Structure Guide](SASS_STRUCTURE.md) - Detailed explanation of all SCSS files
+- [Complete SCSS Structure Guide](SASS_STRUCTURE.md) - Detailed explanation of all SCSS files
 - [Setup Guide](setup-guide.md) - File-by-file code and implementation guide
 - [React Documentation](https://react.dev)
 - [Vite Documentation](https://vitejs.dev)
@@ -189,3 +189,18 @@ Made with ❤️ by [Pragga Mukherjee](https://github.com/pragga9876)
 ---
 
 # Note [Don't Forget!!] : SASS and SCSS are both syntaxes of the SASS (Syntactically Awesome Stylesheets) preprocessor, each offering enhanced features that extend the capabilities of traditional CSS. While both share the same functionality, their syntaxes differ, catering to different preferences among developers. (I have used SCSS & SASS interchangably here.)
+
+# Key difference: syntax, not features
+Sass has two syntaxes:
+
+- SCSS (.scss) – CSS-like syntax with {} and ;
+- Indented Sass (.sass) – no {} and no ;, uses indentation and newlines instead.​
+
+Both compile to CSS and support the same features (variables, mixins, nesting, etc.).​
+
+What I have written is SCSS syntax:
+.app-container {
+  @include flex-center;
+  padding: $space-lg;
+}
+This is valid in .scss, but invalid in .sass
