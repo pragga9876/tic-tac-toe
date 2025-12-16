@@ -1173,25 +1173,6 @@ label {
 
 ---
 
-## 🔄 Update `src/index.jsx`
-
-Change the import from `.css` to `.scss`:
-
-```jsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import './styles/index.scss';  // ← Change from ./styles.css
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-```
-
----
-
 ## 📁 Final Folder Structure
 
 ```
@@ -1240,17 +1221,5 @@ tic-tac-toe/
 | `_buttons.scss` | Change button appearance |
 | `_player-indicator.scss` | Change player indicator appearance |
 | `_announcements.scss` | Change winner/draw styles |
-
----
-
-## 💡 Benefits Summary
-
-✅ **Organization** - Each component has its own file
-✅ **Maintainability** - Easy to find and update styles
-✅ **Reusability** - Mixins prevent code duplication
-✅ **Scalability** - Easy to add new components
-✅ **Performance** - Same file size as single CSS file
-✅ **Readability** - Variables make code self-documenting
-✅ **Professional** - Industry-standard approach
 
 ---
