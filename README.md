@@ -69,7 +69,7 @@ tic-tac-toe/
 
 ## 💅 Why SCSS Structure??
 
-- [Complete SASS Structure Guide](SASS_STRUCTURE.md) - Detailed explanation of all SCSS files
+- [Complete SASS Structure Guide](SCSS_STRUCTURE.md) - Detailed explanation of all SCSS files
 
 | Benefit | How it Helps |
 |---------|-------------|
