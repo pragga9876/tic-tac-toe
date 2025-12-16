@@ -4,43 +4,8 @@ A beautiful, fully-featured Tic Tac Toe game built with **React**, **Vite**, and
 ![Tic Tac Toe](https://img.shields.io/badge/React-18.0-blue?logo=react) ![Vite](https://img.shields.io/badge/Vite-4.0-purple?logo=vite) ![SCSS](https://img.shields.io/badge/SCSS-Sass-cc6699?logo=sass) 
 
 ---
+
 ## Website : https://tic-tac-toe-pragga9876.vercel.app/
-
-## 🎮 Features
-
-✨ **Modern UI Design**
-- Beautiful gradient backgrounds with neon accents
-- Glassmorphism card design with backdrop blur
-- Smooth animations and transitions
-- Dark mode optimized
-
-🎯 **Game Features**
-- Classic Tic Tac Toe gameplay
-- Real-time current player indicator
-- Instant winner detection
-- Draw detection
-- Move history with time-travel functionality
-- Score tracking (X wins, O wins, Draws)
-- One-click game reset
-- Score reset button
-
-📱 **Responsive Design**
-- Mobile-friendly layout
-- Adapts to tablets and desktops
-- Touch-friendly buttons and squares
-- Optimized for all screen sizes
-
-⚡ **Performance**
-- Lightning-fast with Vite
-- No external dependencies (only React)
-- Optimized animations
-- Minimal bundle size
-
-🎨 **Advanced Styling**
-- Full SCSS with variables, mixins, and nesting
-- Professional component-based structure
-- Easy to customize and maintain
-- Reusable style patterns
 
 ---
 
