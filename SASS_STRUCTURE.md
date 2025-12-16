@@ -1223,30 +1223,10 @@ tic-tac-toe/
 ---
 
 ## ✅ Setup Steps
-
-1. **Install Sass:**
-   ```bash
-   npm install -D sass
-   ```
-
-2. **Create the `src/styles/` folder**
-
-3. **Create all 12 SCSS files** with the code above
-
-4. **Update `src/index.jsx`:**
-   ```jsx
-   import './styles/index.scss';
-   ```
-
-5. **Delete old `styles.css`**
-
-6. **Run dev server:**
-   ```bash
-   npm run dev
-   ```
-
-7. **Done!** Your app works exactly the same but with better organized SCSS! 🎉
-
+**Install Sass:**
+  ```bash
+  npm install -D sass
+  ```
 ---
 
 ## 🎯 When to Modify Each File
@@ -1274,5 +1254,3 @@ tic-tac-toe/
 ✅ **Professional** - Industry-standard approach
 
 ---
-
-That's it! You now have a professional, scalable SCSS structure! 🚀
