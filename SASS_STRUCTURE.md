@@ -1171,36 +1171,6 @@ label {
 
 ---
 
-## 📁 Final Folder Structure
-
-```
-tic-tac-toe/
-├── public/
-│   └── index.html
-├── src/
-│   ├── styles/
-│   │   ├── index.scss              ← Main file (imports all)
-│   │   ├── _variables.scss         ← Colors, spacing
-│   │   ├── _mixins.scss            ← Reusable functions
-│   │   ├── _animations.scss        ← Keyframe animations
-│   │   ├── _global.scss            ← Base styles
-│   │   ├── _layout.scss            ← Containers
-│   │   ├── _typography.scss        ← Text styles
-│   │   ├── _scoreboard.scss        ← Score styles
-│   │   ├── _board.scss             ← Game board
-│   │   ├── _buttons.scss           ← Button styles
-│   │   ├── _player-indicator.scss  ← Player turn
-│   │   └── _announcements.scss     ← Winner/draw
-│   ├── App.jsx
-│   ├── Game.jsx
-│   └── index.jsx
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
----
-
 ## ✅ Setup Steps
 **Install Sass:**
   ```bash
