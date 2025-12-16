@@ -1,4 +1,3 @@
-# Note [Don't Forget!!] : SASS and SCSS are both syntaxes of the SASS (Syntactically Awesome Stylesheets) preprocessor, each offering enhanced features that extend the capabilities of traditional CSS. While both share the same functionality, their syntaxes differ, catering to different preferences among developers. (I have used SCSS & SASS interchangably here.)
 # ⚡ Tic Tac Toe - Modern React Game with SCSS
 A beautiful, fully-featured Tic Tac Toe game built with **React**, **Vite**, and **SCSS**, featuring modern animations, gradient UI, score tracking, and responsive design.
 
@@ -102,56 +101,9 @@ tic-tac-toe/
 └── README.md                          # This file
 ```
 
-## 💅 SCSS Structure Explained
+## 💅 Why SCSS Structure??
 
-### What is SCSS?
-SCSS (Sass) is a CSS preprocessor that lets you use variables, mixins, nesting, and more. It compiles to regular CSS that browsers understand.
-
-### Key Files
-
-#### `_variables.scss` - Store Everything Reusable
-All colors, spacing, fonts in one place. Change once, updates everywhere!
-
-```scss
-$primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-$neon-cyan: #00d4ff;
-$space-lg: 16px;
-```
-
-#### `_mixins.scss` - Reusable Style Blocks
-Define mixins once, use them anywhere with `@include`:
-
-```scss
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-// Usage:
-.my-element {
-  @include flex-center;  // Includes all flexbox styles!
-}
-```
-
-#### `_animations.scss` - All Animations
-Centralized keyframe animations for consistency:
-
-```scss
-@keyframes popIn {
-  0% { transform: scale(0); }
-  100% { transform: scale(1); }
-}
-```
-
-#### Component Files
-Each component (board, buttons, etc.) has its own partial:
-- `_board.scss` - Game board styling
-- `_buttons.scss` - Button styles
-- `_scoreboard.scss` - Score tracking
-- etc.
-
-### Why This Structure?
+- [Complete SASS Structure Guide](SASS_STRUCTURE.md) - Detailed explanation of all SCSS files
 
 | Benefit | How it Helps |
 |---------|-------------|
@@ -195,16 +147,6 @@ When adding new styles:
 
 ---
 
-## 🙏 Acknowledgments
-
-- **React** - For the amazing UI library
-- **Vite** - For the blazing-fast build tool
-- **Sass/SCSS** - For professional styling capabilities
-- **Google Fonts** - For the beautiful Poppins font
-- **Inspired by** - Classic Tic Tac Toe game and React tutorials
-
----
-
 ## 🎯 Roadmap
 
 - [ ] Difficulty levels (Easy, Medium, Hard AI)
@@ -234,8 +176,6 @@ When adding new styles:
 
 Made with ❤️ by [Pragga Mukherjee](https://github.com/pragga9876)
 
-⭐ If you like this project, please give it a star!
-
 ---
 
 ## 📖 Additional Resources
@@ -245,3 +185,7 @@ Made with ❤️ by [Pragga Mukherjee](https://github.com/pragga9876)
 - [React Documentation](https://react.dev)
 - [Vite Documentation](https://vitejs.dev)
 - [Sass Documentation](https://sass-lang.com)
+
+---
+
+# Note [Don't Forget!!] : SASS and SCSS are both syntaxes of the SASS (Syntactically Awesome Stylesheets) preprocessor, each offering enhanced features that extend the capabilities of traditional CSS. While both share the same functionality, their syntaxes differ, catering to different preferences among developers. (I have used SCSS & SASS interchangably here.)
