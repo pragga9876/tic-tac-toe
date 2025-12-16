@@ -1,5 +1,5 @@
+# Note [Don't Forget!!] : SASS and SCSS are both syntaxes of the SASS (Syntactically Awesome Stylesheets) preprocessor, each offering enhanced features that extend the capabilities of traditional CSS. While both share the same functionality, their syntaxes differ, catering to different preferences among developers. (I have used SCSS & SASS interchangably here.)
 # ⚡ Tic Tac Toe - Modern React Game with SCSS
-
 A beautiful, fully-featured Tic Tac Toe game built with **React**, **Vite**, and **SCSS**, featuring modern animations, gradient UI, score tracking, and responsive design.
 
 ![Tic Tac Toe](https://img.shields.io/badge/React-18.0-blue?logo=react) ![Vite](https://img.shields.io/badge/Vite-4.0-purple?logo=vite) ![SCSS](https://img.shields.io/badge/SCSS-Sass-cc6699?logo=sass) 
@@ -363,7 +363,7 @@ Made with ❤️ by [Pragga Mukherjee](https://github.com/pragga9876)
 
 ## 📖 Additional Resources
 
-- [Complete SCSS Structure Guide](SCSS_STRUCTURE.md) - Detailed explanation of all SCSS files
+- [Complete SASS Structure Guide](SASS_STRUCTURE.md) - Detailed explanation of all SCSS files
 - [Setup Guide](setup-guide.md) - File-by-file code and implementation guide
 - [React Documentation](https://react.dev)
 - [Vite Documentation](https://vitejs.dev)
