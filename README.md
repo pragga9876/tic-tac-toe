@@ -2,7 +2,7 @@
 
 A beautiful, fully-featured Tic Tac Toe game built with **React**, **Vite**, and **SCSS**, featuring modern animations, gradient UI, score tracking, and responsive design.
 
-![Tic Tac Toe](https://img.shields.io/badge/React-18.0-blue?logo=react) ![Vite](https://img.shields.io/badge/Vite-4.0-purple?logo=vite) ![SCSS](https://img.shields.io/badge/SCSS-Sass-cc6699?logo=sass) ![License](https://img.shields.io/badge/License-MIT-green)
+![Tic Tac Toe](https://img.shields.io/badge/React-18.0-blue?logo=react) ![Vite](https://img.shields.io/badge/Vite-4.0-purple?logo=vite) ![SCSS](https://img.shields.io/badge/SCSS-Sass-cc6699?logo=sass) 
 
 ---
 
@@ -198,42 +198,6 @@ Each component (board, buttons, etc.) has its own partial:
 
 ---
 
-## 🎯 How to Play
-
-1. **Start Game**: The game starts automatically
-2. **Make Moves**: Click on any empty square to place your mark (X or O)
-3. **Win Condition**: Get 3 in a row (horizontal, vertical, or diagonal)
-4. **Score Tracking**: Wins are automatically counted
-5. **Reset**: Click "New Game" to play again or "Reset Scores" to clear stats
-
-### Turn Indicator
-- See the current player (X or O) highlighted at the top
-- Color changes based on whose turn it is
-
----
-
-## 🔧 Available Scripts
-
-### Development
-```bash
-npm run dev
-```
-Starts the Vite development server with hot module replacement (HMR).
-
-### Build
-```bash
-npm run build
-```
-Creates an optimized production build in the `dist/` folder.
-
-### Preview Build
-```bash
-npm run preview
-```
-Previews the production build locally.
-
----
-
 ## 📦 Dependencies
 
 ### Core
@@ -335,36 +299,6 @@ Then use it in any component:
 
 ---
 
-## 🐛 Troubleshooting
-
-### "Port 5173 is already in use"
-```bash
-npm run dev -- --port 3000
-```
-
-### Styles not loading
-1. Clear browser cache (Ctrl+Shift+Delete)
-2. Restart dev server: `npm run dev`
-3. Check that `src/styles/index.scss` is imported in `src/index.jsx`
-
-### SCSS compilation errors
-1. Make sure all files in `src/styles/` are properly named with `_` prefix
-2. Check `index.scss` imports are in correct order
-3. Verify no circular imports
-
-### Game not responding
-1. Open browser console (F12)
-2. Check for JavaScript errors
-3. Ensure all files are in correct directories
-4. Run `npm install` to reinstall dependencies
-
-### Build fails
-1. Delete `node_modules/` folder
-2. Run `npm install` again
-3. Run `npm run build`
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how to help:
@@ -381,12 +315,6 @@ When adding new styles:
 2. Create reusable mixins in `_mixins.scss`
 3. Keep component styles in their respective files
 4. Follow the established structure
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
