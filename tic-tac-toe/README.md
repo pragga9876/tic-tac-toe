@@ -335,65 +335,6 @@ Then use it in any component:
 
 ---
 
-## 🚢 Deployment
-
-### Deploy to Vercel (Recommended)
-
-1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial Tic Tac Toe commit"
-   git push origin main
-   ```
-
-2. **Connect to Vercel**
-   - Go to [vercel.com](https://vercel.com)
-   - Click "Add New Project"
-   - Import your GitHub repository
-   - Select **React** as the framework
-   - Click "Deploy"
-
-3. **Your app is live!** 🎉
-   - Vercel will automatically rebuild on each push to main
-   - Get a unique URL like `https://tic-tac-toe-xxx.vercel.app`
-
-### Alternative: Deploy to Netlify
-
-1. **Build locally**
-   ```bash
-   npm run build
-   ```
-
-2. **Drag & drop `dist/` folder to Netlify**
-   - Go to [netlify.com](https://netlify.com)
-   - Drag your `dist/` folder into the deployment area
-   - Your site is live!
-
-### Alternative: Deploy to GitHub Pages
-
-1. **Update `vite.config.js`**
-   ```js
-   export default {
-     base: '/tic-tac-toe/',
-     // ... rest of config
-   }
-   ```
-
-2. **Build and deploy**
-   ```bash
-   npm run build
-   git add dist/
-   git commit -m "Deploy to GitHub Pages"
-   git push
-   ```
-
-3. **Enable GitHub Pages**
-   - Go to Repository Settings → Pages
-   - Select `main` branch and `/` folder
-   - Your site is live at `https://yourusername.github.io/tic-tac-toe`
-
----
-
 ## 🐛 Troubleshooting
 
 ### "Port 5173 is already in use"
@@ -421,25 +362,6 @@ npm run dev -- --port 3000
 1. Delete `node_modules/` folder
 2. Run `npm install` again
 3. Run `npm run build`
-
----
-
-## 📈 Performance
-
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices)
-- **Bundle Size**: ~50KB (gzipped)
-- **Load Time**: < 1 second
-- **Animations**: 60 FPS smooth
-- **SCSS Compilation**: Instant with Vite
-
----
-
-## 📚 SCSS Learning Resources
-
-- [Official Sass Documentation](https://sass-lang.com/documentation)
-- [SCSS Nesting & Hierarchy](https://sass-lang.com/documentation/style-rules/nesting)
-- [Variables & Mixins Guide](https://sass-lang.com/documentation/variables)
-- [7-1 Architecture Pattern](https://sass-guidelin.es/#architecture)
 
 ---
 
@@ -478,15 +400,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support
-
-- 💬 **Issues**: Open an issue on GitHub
-- 📧 **Email**: your.email@example.com
-- 🌐 **Website**: [your-website.com](https://your-website.com)
-- 📖 **SCSS Guide**: See `scss-structure.md` for detailed SCSS structure guide
-
----
-
 ## 🎯 Roadmap
 
 - [ ] Difficulty levels (Easy, Medium, Hard AI)
@@ -514,19 +427,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🚀 What's Next?
-
-After setting up the project:
-
-1. **Customize colors** - Edit `_variables.scss`
-2. **Modify spacing** - Adjust spacing variables
-3. **Add features** - Create new SCSS files as needed
-4. **Deploy** - Push to Vercel/Netlify/GitHub Pages
-5. **Share** - Show your amazing project! ⭐
-
----
-
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Made with ❤️ by [Pragga Mukherjee](https://github.com/pragga9876)
 
 ⭐ If you like this project, please give it a star!
 
@@ -534,7 +435,7 @@ Made with ❤️ by [Your Name](https://github.com/yourusername)
 
 ## 📖 Additional Resources
 
-- [Complete SCSS Structure Guide](scss-structure.md) - Detailed explanation of all SCSS files
+- [Complete SCSS Structure Guide](SCSS-STRUCTURE.md) - Detailed explanation of all SCSS files
 - [Setup Guide](setup-guide.md) - File-by-file code and implementation guide
 - [React Documentation](https://react.dev)
 - [Vite Documentation](https://vitejs.dev)
