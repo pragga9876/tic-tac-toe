@@ -1,8 +1,6 @@
-# SCSS Project Structure Guide - Complete Implementation
+# SASS Project Structure Guide
 
 ## 📁 Folder Structure
-
-Your new SCSS structure should look like this:
 
 ```
 src/
