@@ -165,8 +165,3 @@ What I have written is SCSS syntax:
   padding: $space-lg;
 }
 This is valid in .scss, but invalid in .sass
-
----
-
-Made with ❤️ by [Pragga Mukherjee](https://github.com/pragga9876)
-
