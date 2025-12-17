@@ -143,7 +143,6 @@ When adding new styles:
 ## 📖 Additional Resources
 
 - [Complete SCSS Structure Guide](SCSS_STRUCTURE.md) - Detailed explanation of all SCSS files
-- [Setup Guide](setup-guide.md) - File-by-file code and implementation guide
 - [React Documentation](https://react.dev)
 - [Vite Documentation](https://vitejs.dev)
 - [Sass Documentation](https://sass-lang.com)
